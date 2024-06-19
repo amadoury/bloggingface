@@ -1,0 +1,54 @@
+@font-face {
+    font-family : myfont;
+    src: url(../fonts/Akatab.ttf);
+}
+
+.navbar { 
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.hrundernav{
+    margin-top: 3px;
+    margin-bottom: 1rem;
+}
+
+.headerdiv{
+    font-family: myfont;
+}
+
+
+.news{
+    font-size:1.3rem;
+    font-weight: bold;
+}
+
+.texthead{
+    font-size:3rem;
+    font-weight: bolder;
+}
+
+
+.myfont {
+    font-family: myfont;
+}
+
+.linktrad{
+    text-decoration: none;
+    color:black;
+}
+ 
+.arrow-top-right{   
+    margin-left: 2px;
+    object-fit: contain;
+}
+
+.link-art{
+    text-decoration: none;
+    color:black;
+    font-family: myfont;
+}
+
+.hrarticles{
+    margin:0;
+}
