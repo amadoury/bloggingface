@@ -1,0 +1,30 @@
+{% load i18n %}
+{% include 'blog/header.html' %}
+{% load static %}
+
+<div class="container main-div">
+    
+    <h2 class="text-center">{% trans 'Chat With The Bot' %}</h2>
+
+    <div class="container chat">
+        {% comment %} <div class="text-end question">
+        </div>
+        <div class="response text-start">
+        </div> {% endcomment %}
+    </div>
+
+    
+    <div class="container mt-5 input-bar">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group input-group-custom">
+                    <form class="formsd">
+                        <input type="text" name="promptvalue" class="form-control" width="100%" placeholder="{% trans 'Ask me anything' %}">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'blog/footer.html' %}

@@ -3,6 +3,10 @@
     src: url(../fonts/Akatab.ttf);
 }
 
+body {
+    /* background-color: red */
+}
+
 .navbar { 
     margin-bottom: 0;
     padding-bottom: 0;
@@ -49,6 +53,64 @@
     font-family: myfont;
 }
 
+.art-title{
+    font-family: myfont;
+}
+
 .hrarticles{
     margin:0;
+}
+
+.title{
+    font-family: myfont;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.input-group-custom {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 5px;
+}
+.input-group-custom .form-control {
+    border: none;
+    border-radius: 25px;
+    box-shadow: none;
+}
+
+.input-bar {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}
+
+.question{
+    background-color: #e5eefe;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    padding-right: 15px;
+}
+
+.response{
+    background-color: rgb(235, 247, 235);
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    padding-left: 15px;
+}
+
+input[type="text"] {
+    width: 100%; 
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+.cont-footer{
+    background-color: black;
+    color:white;
 }

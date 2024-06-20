@@ -15,7 +15,7 @@
       <div class="article-item">
         <hr class="hrarticles">
         <div class="d-flex flex-row align-items-center justify-content-center mt-3 mb-3">
-          <img src="https://placehold.co/150x100" class="me-2"/>
+          <img src="{% static article.img %}" class="me-2" width="150px" height="100"/>
           <div class="d-flex flex-column">
             <p class="title">{{article.title}}</p>
             <p class="date">{{article.pub_date}}</p>
@@ -35,8 +35,5 @@
       {% include "blog/pagination.html" %}
     </div>
     </div>
-
 </div>
-<script src="{% static 'blog/js/test.js' %}"></script>
-</body>
-</html>
+{% include 'blog/footer.html' %}
