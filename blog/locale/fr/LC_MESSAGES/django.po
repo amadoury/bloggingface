@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-19 01:34+0200\n"
+"POT-Creation-Date: 2024-06-21 00:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: templates/blog/index.html:7
+#: templates/blog/article.html:8
+msgid "Author"
+msgstr "Auteur"
+
+#: templates/blog/article.html:9
+msgid "Published"
+msgstr "Publié"
+
+#: templates/blog/article.html:21
+msgid "Ask Question About The Article"
+msgstr "Poser une question sur l'article"
+
+#: templates/blog/article.html:26 templates/blog/chat.html:18
+msgid "Ask me anything"
+msgstr "Demande-moi n'importe quoi"
+
+#: templates/blog/chat.html:7
+msgid "Chat With The Bot"
+msgstr "Discutez avec le bot"
+
+#: templates/blog/index.html:6
 msgid "News"
 msgstr "Nouvautés"
 
-#: templates/blog/index.html:9
+#: templates/blog/index.html:8
 msgid "Found The Lastest Blog in All Topics"
 msgstr "Trouver Les Derniers Articles Sur Tous Les Thèmes"
 
-#: templates/blog/index.html:24
+#: templates/blog/index.html:25
 msgid "Read more"
 msgstr "En savoir plus"
-
-#: views.py:21
-msgid "Welcome to my site."
-msgstr ""

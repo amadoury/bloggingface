@@ -17,7 +17,7 @@
         <div class="d-flex flex-row align-items-center justify-content-center mt-3 mb-3">
           <img src="{% static article.img %}" class="me-2" width="150px" height="100"/>
           <div class="d-flex flex-column">
-            <p class="title">{{article.title}}</p>
+            <a href="/{{article.pk}}" class="atitle"><p class="title">{{article.title}}</p></a>
             <p class="date">{{article.pub_date}}</p>
           </div>
           <div class="ms-auto">
