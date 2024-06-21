@@ -7,8 +7,6 @@ from .models import Article
 from vertexai.preview.generative_models import GenerativeModel
 import requests
 import markdown
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/amadou/Desktop/bloggingface/service_account.json"
  
 class ListArticleView(generic.ListView):
     model = Article
