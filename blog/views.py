@@ -7,6 +7,7 @@ from .models import Article
 from vertexai.preview.generative_models import GenerativeModel
 import requests
 import markdown
+
  
 class ListArticleView(generic.ListView):
     model = Article
