@@ -1,15 +1,15 @@
 # bloggingface
 
 
-## INSTALLATION LLAMA3
+## LLM
+J'ai utilisé gemini de google avec google cloud computing(GCP).
+Le chatbot fonctionne très bien.
 
-ON LINUX :
-for installing ollama 
-```
-sudo snap install ollama
-```
+J'ai voulu rajouté la fonctionnalité RAG pour poser des questions spécifiques à un article donné,
+mais je l'ai pas terminié pour le moment.
 
-Now install llama3 ~ 4.7 GB
-```
-ollama run llama3
-```
+Le site n'est pas encore deployé.
+
+Utilisation de chatgpt surtout pour debugger mon code.
+
+Il y a une vidéo presentation.webm qui présente en géneral le site.
