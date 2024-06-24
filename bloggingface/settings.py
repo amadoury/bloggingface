@@ -14,9 +14,11 @@ import dj_database_url
 from pathlib import Path
 
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/amadou/Desktop/bloggingface/service_account.json"
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+GOOGLE_APPLICATION_CREDENTIALS = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 
 
 # Quick-start development settings - unsuitable for production
