@@ -1,3 +1,4 @@
+newenv/
 build.sh
 local_database.sql
 service_account.json
