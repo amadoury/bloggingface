@@ -14,6 +14,7 @@ class ListArticleView(generic.ListView):
     template_name = "blog/index.html"
     context_object_name = "list_articles"
     paginate_by = 5
+    ordering = ['title']
 
 class DetailArticle(generic.DetailView):
     model = Article
