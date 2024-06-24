@@ -4,6 +4,7 @@ from django.utils.translation import gettext as _
 from django.views import generic
 from .models import Article
 
+import vertexai
 from vertexai.preview.generative_models import GenerativeModel
 import requests
 import markdown
@@ -30,6 +31,7 @@ def chatbot(request):
 
 def prompt(request):
     if request.method == 'POST':
+        vertexai.init(project_id="bloggingface-427002")
         prompt = request.POST.get('prompt')
         model = GenerativeModel('gemini-pro')
         res = model.generate_content(prompt)

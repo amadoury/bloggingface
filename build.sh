@@ -10,5 +10,3 @@ pip install -r requirements.txt
 
 # Apply any outstanding database migrations
 #python manage.py migrate
-
-gcloud config set project bloggingface-427002
