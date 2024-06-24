@@ -31,7 +31,7 @@ def chatbot(request):
 def prompt(request):
     if request.method == 'POST':
         prompt = request.POST.get('prompt')
-        model = GenerativeModel('gemini-pro')
+        model = GenerativeModel(model_name='gemini-pro', project_id="bloggingface-427002")
         res = model.generate_content(prompt)
         text = markdown.markdown(res.text)
         return JsonResponse({'response': text})  
