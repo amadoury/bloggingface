@@ -152,4 +152,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-LOCALE_PATHS = 'blog/locale/'
+LOCALE_PATHS = ('blog/locale/',)
