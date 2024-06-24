@@ -14,11 +14,29 @@ import dj_database_url
 from pathlib import Path
 
 import os
+
+import json
+import tempfile
+
+service_account_info = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
+
+if service_account_info:
+    # Create a temporary file to store the service account info
+    with tempfile.NamedTemporaryFile(delete=False, suffix='.json') as temp_file:
+        temp_file.write(service_account_info.encode())
+        temp_file_path = temp_file.name
+
+    # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = temp_file_path
+
+    print(f"Temporary service account file created at: {temp_file_path}")
+else:
+    print("Environment variable 'GOOGLE_APPLICATION_CREDENTIALS_JSON' not found.")
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-GOOGLE_APPLICATION_CREDENTIALS = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 
 
 # Quick-start development settings - unsuitable for production
