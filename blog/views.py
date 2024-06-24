@@ -2,7 +2,6 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.utils.translation import gettext as _
 from django.views import generic
-import vertexai
 from .models import Article
 
 from vertexai.preview.generative_models import GenerativeModel
@@ -32,11 +31,7 @@ def chatbot(request):
 def prompt(request):
     if request.method == 'POST':
         prompt = request.POST.get('prompt')
-        #model = GenerativeModel(model_name='gemini-pro', project_id="bloggingface-427002")
-        model = vertexai( 
-            model_name="gemini-pro", 
-            project_id="bloggingface-427002"
-        )
+        model = GenerativeModel('gemini-pro')
         res = model.generate_content(prompt)
         text = markdown.markdown(res.text)
         return JsonResponse({'response': text})  
