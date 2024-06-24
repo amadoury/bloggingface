@@ -3,9 +3,9 @@
 {% include 'blog/header.html' %}        
 <div class="container">
   <div class="text-center headerdiv mt-5">
-    <p class="news">{% trans "News" %}</p>
+    <p class="news">{% translate "News" %}</p>
     <p class="texthead mt-3">
-      {% trans "Found The Lastest Blog in All Topics" %}
+      {% translate "Found The Lastest Blog in All Topics" %}
     </p>
   </div>
 
@@ -22,7 +22,7 @@
           </div>
           <div class="ms-auto">
             <a class="d-flex flex-row link-art" href="/{{article.pk}}">
-              <p>{% trans "Read more" %}</p>
+              <p>{% translate "Read more" %}</p>
               <img class="arrow-top-right mt-1" src="{% static 'blog/assets/arrow-up-right.png' %}" width="20px" height="15px" />
             </a>
           </div>
