@@ -21,14 +21,18 @@ import logging
 
 service_account_info = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
 
-if service_account_info:
-    path = "{}/service_account.json".format(os.getcwd())
-    with open(path, 'w') as f:
-        f.write(json.dumps(json.loads(service_account_info)))
-    logging.warning("Path to credentials: %s" %  path)
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  path
-else:
-    print("Environment variable 'GOOGLE_APPLICATION_CREDENTIALS_JSON' not found.")
+# if service_account_info:
+#     path = "{}/service_account.json".format(os.getcwd())
+#     with open(path, 'w') as f:
+#         f.write(json.dumps(json.loads(service_account_info)))
+#     logging.warning("Path to credentials: %s" %  path)
+#     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  path
+# else:
+#     print("Environment variable 'GOOGLE_APPLICATION_CREDENTIALS_JSON' not found.")
+
+path = "{}/service_account.json".format(os.getcwd())
+logging.warning("Path to credentials: %s" %  path)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  path
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
