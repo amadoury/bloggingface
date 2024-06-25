@@ -21,10 +21,9 @@ import tempfile
 service_account_info = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
 
 if service_account_info:
-    json_content = json.loads(service_account_info)
     file_name = 'service_account.json'
     with open(file_name, 'w') as f:
-        json.dump(json_content, f)
+        f.write(json.dumps(json.loads(service_account_info)))
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  os.path.abspath(file_name)
 else:
     print("Environment variable 'GOOGLE_APPLICATION_CREDENTIALS_JSON' not found.")
