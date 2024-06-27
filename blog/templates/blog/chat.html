@@ -3,25 +3,30 @@
 {% load static %}
 
 <div class="container main-div">
-    
-    <h2 class="text-center">{% trans 'Chat With The Bot' %}</h2>
-
-    <div class="container chat">
+    <div>
+        <h2 class="text-center">{% translate 'Chat With The Bot' %}</h2>
     </div>
-
-    <div class="container cinput">
-        <div class="container mt-5 input-bar">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="input-group-custom">
-                        <form class="formsd">
-                            <input type="text" name="promptvalue" class="form-control" width="100%" placeholder="{% trans 'Ask me anything' %}">
-                        </form>
+    <div class="chat-wrapper justify-content-center align-item-center">
+        <div id="chat-messages">
+            <div class="container chat">
+            </div>
+        </div>
+    
+        <div class="container cinput">
+            <div class="container mt-5 input-bar">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group-custom">
+                            <form class="formsd">
+                                <input type="text" name="promptvalue" class="form-control" width="100%" placeholder="{% translate 'Ask me anything' %}">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
 {% include 'blog/footer.html' %}

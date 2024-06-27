@@ -16,22 +16,9 @@ from pathlib import Path
 import os
 
 import json
-import tempfile
-import logging
 
 service_account_info = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
-
-# if service_account_info:
-#     path = "{}/service_account.json".format(os.getcwd())
-#     with open(path, 'w') as f:
-#         f.write(json.dumps(json.loads(service_account_info)))
-#     logging.warning("Path to credentials: %s" %  path)
-#     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  path
-# else:
-#     print("Environment variable 'GOOGLE_APPLICATION_CREDENTIALS_JSON' not found.")
-
 path = "{}/service_account.json".format(os.getcwd())
-logging.warning("Path to credentials: %s" %  path)
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  path
 
 
@@ -46,11 +33,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(' ')
-
 
 # Application definition
 

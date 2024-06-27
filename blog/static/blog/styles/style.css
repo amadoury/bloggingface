@@ -1,3 +1,4 @@
+
 @font-face {
     font-family : myfont;
     src: url(../fonts/Akatab.ttf);
@@ -73,8 +74,6 @@ body {
     font-family: myfont;
 }
 
-
-
 .input-group-custom {
     border: 2px solid #ccc;
     border-radius: 25px;
@@ -85,12 +84,6 @@ body {
     border: none;
     border-radius: 25px;
     box-shadow: none;
-}
-
-.input-bar {
-    position: fixed;
-    bottom: 30px;
-    width: 100%;
 }
 
 .question{
@@ -124,5 +117,47 @@ input[type="text"] {
 }
 
 .cinput{
-    background-color: white;
+    background-color: red;
+    width: 100%;
+}
+
+.chat-wrapper{
+    
+}
+
+.input-bar {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}
+
+#chat-messages{
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%;
+    top: 150px;
+    bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-family: myfont;
+        font-size: medium;
+    }
+
+    .date{
+        font-size: smaller;
+    }
+
+    .read-more{
+        font-size: smaller;
+    }
+
+    .texthead{
+        font-size: 1.5rem;
+    }
 }
