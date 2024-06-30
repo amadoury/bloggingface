@@ -41,6 +41,3 @@ def prompt(request):
     else : 
         return JsonResponse({'error': 'Invalid request'}, status=400)
     
-def rag(request):
-    if request.method == 'POST':
-        pass

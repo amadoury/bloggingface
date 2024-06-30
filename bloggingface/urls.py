@@ -16,12 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from blog.views import chatbot, prompt, rag
+from blog.views import chatbot, prompt
 
 urlpatterns = [
     path("", include("blog.urls")),
     path('admin/', admin.site.urls),
     path('chatbot/', chatbot),
     path('chatbot/prompt', prompt),
-    path('chatbot/rag', rag),
 ]
